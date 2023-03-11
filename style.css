@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins', sans-serif;;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 40px;
+    background-color: black;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    overflow:scroll;
+}
+
+.container .row{
+    display: flex;
+    gap: 20px;
+}
+
+.container .row .ticket{
+    background-color: white;
+    display: flex;
+    width:700px;
+}
+
+.ticket #one{
+    width: 40%;
+    background: url("img/naruto.webp");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.ticket #two{
+    width: 40%;
+    background-image: url("img/jjk2.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.ticket #three{
+    width: 40%;
+    background-image: url("img/violet_Evergarden.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.ticket #four{
+    width: 40%;
+    background-image: url("img/demon\ slayer.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.ticket #five{
+    width: 40%;
+    background-image: url("img/dragon\ ball.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.ticket #six{
+    width: 40%;
+    background-image: url("img/haikyuu.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+.ticket .ticket_Info{
+    width: 70%;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.ticket_Info .title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket_Info .title .name{
+    font-size: 35px;
+}
+
+.small_details{
+    font-size: 12px;
+}
+
+.ticket_Info .conf_Ticket{
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.ticket_Info .venue_Time h3{
+    font-size: 25px;
+}
+
+
+.last{
+    padding: 15px 0;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.last .code{
+    align-self: flex-end;
+    font-size: 20px;
+}
+
+.barcode img{
+    width: 250px;
+    position: absolute;
+    top: 120px;
+    left: 275px;
+    transform: rotate(-90deg);
+}
+
+
+@media screen and (max-width:991px){
+    .row{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:767px){
+    .container .row .ticket{
+        width: 500px;
+    }
+
+    .barcode img{
+        top: 120px;
+        left: 150px;
+    }
+
+    .last{
+        width: 150px;
+    }
+}
